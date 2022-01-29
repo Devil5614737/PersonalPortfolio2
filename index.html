@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Ks Portfolio</title>
+
+</head>
+<body>
+    <div class="nav">
+        <header class="header">
+            <div class="left">
+                <p>John.S</p>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="!#">Home</a></li>
+                    <li><a href="!#">Projects</a></li>
+                    <li><a href="!#">Contact</a></li>
+                    <div class="hamburger" id="menu-btn">
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                        <div class="lines"></div>
+                    </div>
+                </ul>
+            </div>
+        </header>
+        <div class="hamburger-menu" id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+              
+            </ul>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="content">
+            <h4>Hi,I am <span>John</span> <br> A fullstack web <br> developer</h4>
+            <div class="projects-toggle-container">
+                <p>Projects</p>
+                <svg id="projects-switch" width="54" height="104" viewBox="0 0 54 104" fill="none">
+                    <rect width="54" height="104" rx="27" fill="#D311D7"/>
+                    <ellipse cx="26.5" cy="21.5" rx="23.5" ry="21.5" fill="white"/>
+                    <rect width="54" height="104" rx="27" fill="#D311D7"/>
+                    <ellipse id="circle" cx="26.5" cy="21.5" rx="23.5" ry="21.5" fill="white"/>
+                    </svg>
+            </div>
+        </div>
+    </div>
+    <section class="projects">
+        <div class="projects-container">
+            <div class="projects-container-title">
+                <p>Projects</p>
+                <div class="bar"></div>
+            </div>
+            <div class="projects">
+                <div class="project">
+                    <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW91bnRhaW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="project">
+                    <div class="project-info">
+                        <div class="left">
+                            <p>Netflix Clone</p>
+                            <div class="techs">
+                                <p>React</p>
+                                <p>Firebase</p>
+                                <p>Styled-Components</p>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <p>Live Demo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW91bnRhaW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="project">
+                    <div class="project-info">
+                        <div class="left">
+                            <p>Netflix Clone</p>
+                            <div class="techs">
+                                <p>React</p>
+                                <p>Firebase</p>
+                                <p>Styled-Components</p>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <p>Live Demo</p>
+                            <!-- <img src="assets/redirect.svg" alt="icon"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills">
+        <div class="skills-container">
+            <div class="skills-container-title">
+                <p>Skills</p>
+                <div class="bar"></div>
+            </div>
+            <div class="skills-icons-container">
+                <div class="skills-icons">
+                    <img src="assets/htmlIcon.svg" alt="icon">
+                    <p>Html</p>
+                </div>
+                <div class="skills-icons">
+                    <img src="assets/cssIcon.svg" alt="icon">
+                    <p>Css</p>
+                </div>
+                <div class="skills-icons">
+                    <img src="assets/javascriptIcon.svg" alt="icon">
+                    <p>Javascript</p>
+                </div>
+                <div class="skills-icons">
+                    <img src="assets/react.svg" alt="icon">
+                    <p>React</p>
+                </div>
+                <div class="skills-icons">
+                    <img src="assets/sassIcon.svg" alt="icon">
+                    <p>Sass</p>
+                </div>
+                <div class="skills-icons">
+                    <img src="assets/sqlIcon.svg" alt="icon">
+                    <p>Sql</p>
+                </div>
+                <div class="skills-icons">
+                    <img src="assets/bootstrapIcon.svg" alt="icon">
+                    <p>Bootstrap</p>
+                </div>
+                <div class="skills-icons">
+                    <img src="assets/firebaseIcon.svg" alt="icon">
+                    <p>Firebase</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="contact">
+        <div class="contact-container">
+            <div class="contact-title-container">
+                <p>Contact</p>
+                <div class="bar"></div>
+            </div>
+            <div class="input-container">
+                <label for="input">Name</label>
+                <input type="text" id="input">
+                <label for="email">Email</label>
+                <input type="email" id="input">
+                <label for="message">Message</label>
+                           <textarea  id="message" ></textarea>
+                <div class="send-btn">
+                    <svg class="sendIcon" width="38" height="33" viewBox="0 0 38 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M34.0419 15.2624L5.70022 2.8874C4.27522 2.3374 2.69189 3.4374 3.32522 4.6749L7.28356 13.8874L25.3336 16.4999L7.28356 19.1124L3.32522 28.3249C2.85022 29.5624 4.27522 30.6624 5.70022 29.9749L34.0419 17.5999C35.1502 17.1874 35.1502 15.8124 34.0419 15.2624Z" fill="white"/>
+                        </svg>
+                    <p>send</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script defer src="index.js"></script>
+</html>

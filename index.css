@@ -1,0 +1,1078 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav .header {
+  padding: 1em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+}
+
+.nav .header .left p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.nav .header .right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+}
+
+@media screen and (max-width: 600px) {
+  .nav .header .right ul li a {
+    display: none;
+  }
+}
+
+.hamburger {
+  display: block;
+  height: 20px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.hamburger .lines {
+  background-color: black;
+  height: 3px;
+  width: 20px;
+  border-radius: 50px;
+  margin-bottom: 4px;
+}
+
+.hamburger-menu {
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.hamburger-menu.active {
+  width: 100vw;
+  height: 50vh;
+  background-color: white;
+  position: absolute;
+  z-index: 211;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+}
+
+.hamburger-menu.active ul li {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.hamburger-menu.active ul li a {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  place-items: center;
+}
+
+.hero::before {
+  content: "FullStack";
+  position: absolute;
+  z-index: -1;
+  margin-top: -52px;
+  font-size: 10rem;
+  font-weight: 900;
+  color: #e4e4e4;
+}
+
+.hero .content {
+  padding: 7em 1em;
+}
+
+.hero .content h4 {
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.hero .content .projects-toggle-container {
+  margin-top: 32px;
+  font-size: 2rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.hero .content .projects-toggle-container p {
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.hero .content .projects-toggle-container #projects-switch {
+  position: relative;
+  width: 20px;
+  cursor: pointer;
+  margin-top: -22px;
+}
+
+.projects .projects-container {
+  padding: 3em 1em;
+}
+
+.projects .projects-container .projects-container-title {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.projects .projects-container .projects-container-title p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.projects .projects-container .projects-container-title .bar {
+  width: 40px;
+  height: 6px;
+  border-radius: 72px;
+  background: linear-gradient(90.46deg, #ff0606 23.46%, #be00cf 92.67%);
+  margin: 0 auto;
+}
+
+.projects .projects-container .projects {
+  margin-top: 82px;
+}
+
+.projects .projects-container .projects .project {
+  padding: 3em 4em;
+  border-radius: 18px;
+  background: linear-gradient(114.43deg, #be00cf 20.86%, #ff0606 98.7%);
+  margin-bottom: 82px;
+}
+
+.projects .projects-container .projects .project img {
+  width: 100%;
+  border-radius: 18px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 700px;
+  -o-object-position: center;
+     object-position: center;
+  margin-top: -62px;
+}
+
+.projects .projects-container .projects .project .project-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+  margin-top: 7px;
+  color: white;
+}
+
+.projects .projects-container .projects .project .project-info .left p {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.projects .projects-container .projects .project .project-info .left .techs {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+}
+
+.projects .projects-container .projects .project .project-info .left .techs p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-right: 12px;
+  color: #dcdcdc;
+}
+
+.projects .projects-container .projects .project .project-info .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+  display: flex;
+  align-items: center;
+}
+
+.projects .projects-container .projects .project .project-info .right p {
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.projects .projects-container .projects .project .project-info .right img {
+  width: 20px;
+  height: 20px;
+}
+
+.skills .skills-container {
+  padding: 3em 1em;
+}
+
+.skills .skills-container .skills-container-title {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.skills .skills-container .skills-container-title p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.skills .skills-container .skills-container-title .bar {
+  width: 30px;
+  height: 6px;
+  border-radius: 72px;
+  background: linear-gradient(90.46deg, #ff0606 23.46%, #be00cf 92.67%);
+  margin: 0 auto;
+}
+
+.skills .skills-container .skills-icons-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 22px;
+  -ms-grid-column: 4;
+  grid-column: 4px;
+  margin-top: 32px;
+  place-items: center;
+}
+
+.skills .skills-container .skills-icons-container .skills-icons {
+  width: 70%;
+}
+
+.skills .skills-container .skills-icons-container .skills-icons img {
+  width: 100%;
+}
+
+.skills .skills-container .skills-icons-container .skills-icons p {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.contact {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  margin-top: 72px;
+  border-radius: 46px 0px 0px 0px;
+}
+
+.contact .contact-container {
+  padding: 3em 1em;
+  position: relative;
+}
+
+.contact .contact-container .contact-title-container {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.contact .contact-container .contact-title-container p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.contact .contact-container .contact-title-container .bar {
+  width: 40px;
+  height: 6px;
+  border-radius: 72px;
+  background: linear-gradient(90.46deg, #ff0606 23.46%, #be00cf 92.67%);
+  margin: 0 auto;
+}
+
+.contact .contact-container label {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.contact .contact-container input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-top: 7px;
+  margin-bottom: 22px;
+  font-size: 1.6rem;
+  padding: .3em;
+}
+
+.contact .contact-container input:focus {
+  outline: none;
+}
+
+.contact .contact-container textarea {
+  display: block;
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-top: 7px;
+  margin-bottom: 22px;
+  font-size: 1.6rem;
+  padding: .3em;
+  height: 120px;
+  resize: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact .contact-container textarea:focus {
+  outline: none;
+}
+
+.contact .contact-container .send-btn {
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  background: linear-gradient(98.08deg, #BE00CF 14.41%, #FF0606 97.92%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+}
+
+.contact .contact-container .send-btn p {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: white;
+}
+
+.contact .contact-container .send-btn .sendIcon {
+  height: 20px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .nav .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+  }
+  .nav .header .left p {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .nav .header .right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+  }
+  .nav .header .right ul li {
+    margin-left: 32px;
+  }
+  .nav .header .right ul li a {
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+  .hero {
+    display: -ms-grid;
+    display: grid;
+    text-align: center;
+    place-items: center;
+  }
+  .hero::before {
+    content: "FullStack";
+    position: absolute;
+    z-index: -1;
+    margin-top: -172px;
+    font-size: 15rem;
+    font-weight: 900;
+    color: #e4e4e4;
+  }
+  .hero .content {
+    padding: 7em 1em;
+  }
+  .hero .content h4 {
+    font-weight: 900;
+    font-size: 5rem;
+  }
+  .hero .content .projects-toggle-container {
+    margin-top: 32px;
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+  }
+  .hero .content .projects-toggle-container p {
+    font-weight: 600;
+    font-size: 1.7rem;
+  }
+  .hero .content .projects-toggle-container #projects-switch {
+    position: relative;
+    width: 20px;
+    cursor: pointer;
+    margin-top: -22px;
+  }
+  .projects .projects-container {
+    padding: 3em 1em;
+  }
+  .projects .projects-container .projects-container-title {
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .projects .projects-container .projects-container-title p {
+    font-size: 2.7rem;
+    font-weight: 600;
+  }
+  .projects .projects-container .projects-container-title .bar {
+    width: 70px;
+    height: 6px;
+    border-radius: 72px;
+    background: linear-gradient(90.46deg, #ff0606 23.46%, #be00cf 92.67%);
+    margin: 0 auto;
+  }
+  .projects .projects-container .projects {
+    margin-top: 112px;
+  }
+  .projects .projects-container .projects .project {
+    padding: 4em 4em;
+    border-radius: 18px;
+    background: linear-gradient(114.43deg, #be00cf 20.86%, #ff0606 98.7%);
+    margin-bottom: 122px;
+  }
+  .projects .projects-container .projects .project img {
+    width: 100%;
+    border-radius: 18px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 700px;
+    -o-object-position: center;
+       object-position: center;
+    margin-top: -92px;
+  }
+  .projects .projects-container .projects .project .project-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    margin-top: 7px;
+    color: white;
+  }
+  .projects .projects-container .projects .project .project-info .left p {
+    font-weight: 600;
+    font-size: 2.3rem;
+  }
+  .projects .projects-container .projects .project .project-info .left .techs {
+    margin-top: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+  }
+  .projects .projects-container .projects .project .project-info .left .techs p {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-right: 12px;
+    color: #dcdcdc;
+  }
+  .projects .projects-container .projects .project .project-info .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    display: flex;
+    align-items: center;
+  }
+  .projects .projects-container .projects .project .project-info .right p {
+    font-weight: 600;
+    font-size: 1.6rem;
+    cursor: pointer;
+  }
+  .projects .projects-container .projects .project .project-info .right img {
+    width: 20px;
+    height: 20px;
+  }
+  .skills .skills-container {
+    padding: 3em 1em;
+  }
+  .skills .skills-container .skills-container-title {
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .skills .skills-container .skills-container-title p {
+    font-size: 2.7rem;
+    font-weight: 600;
+  }
+  .skills .skills-container .skills-container-title .bar {
+    width: 40px;
+    height: 6px;
+    border-radius: 72px;
+    background: linear-gradient(90.46deg, #ff0606 23.46%, #be00cf 92.67%);
+    margin: 0 auto;
+  }
+  .skills .skills-container .skills-icons-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 22px;
+    -ms-grid-column: 4;
+    grid-column: 4px;
+    margin-top: 52px;
+    place-items: center;
+  }
+  .skills .skills-container .skills-icons-container .skills-icons {
+    width: 70%;
+  }
+  .skills .skills-container .skills-icons-container .skills-icons img {
+    width: 100%;
+  }
+  .skills .skills-container .skills-icons-container .skills-icons p {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .contact .contact-container {
+    padding: 3em 1em;
+    position: relative;
+    margin-bottom: 32px;
+  }
+  .contact .contact-container .contact-title-container {
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .contact .contact-container .contact-title-container p {
+    font-size: 2.7rem;
+    font-weight: 600;
+  }
+  .contact .contact-container .contact-title-container .bar {
+    width: 60px;
+    height: 6px;
+    border-radius: 72px;
+    background: linear-gradient(90.46deg, #ff0606 23.46%, #be00cf 92.67%);
+    margin: 0 auto;
+  }
+  .contact .contact-container label {
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+  .contact .contact-container input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-top: 7px;
+    margin-bottom: 22px;
+    font-size: 1.6rem;
+    padding: .3em;
+  }
+  .contact .contact-container input:focus {
+    outline: none;
+  }
+  .contact .contact-container textarea {
+    display: block;
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-top: 7px;
+    margin-bottom: 22px;
+    font-size: 1.6rem;
+    padding: .3em;
+    height: 120px;
+    resize: none;
+    font-family: "Poppins", sans-serif;
+  }
+  .contact .contact-container textarea:focus {
+    outline: none;
+  }
+  .contact .contact-container .send-btn {
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    background: linear-gradient(98.08deg, #BE00CF 14.41%, #FF0606 97.92%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+  }
+  .contact .contact-container .send-btn p {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: white;
+  }
+  .contact .contact-container .send-btn .sendIcon {
+    height: 20px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .nav .header {
+    padding: 1.2em 14em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+  }
+  .nav .header .left p {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .nav .header .right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+  }
+  .nav .header .right ul li {
+    margin-left: 62px;
+  }
+  .nav .header .right ul li a {
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+  .hero {
+    display: -ms-grid;
+    display: grid;
+    text-align: center;
+    place-items: center;
+  }
+  .hero::before {
+    content: "FullStack";
+    position: absolute;
+    z-index: -1;
+    margin-top: -192px;
+    font-size: 28rem;
+    font-weight: 900;
+    color: #e4e4e4;
+  }
+  .hero .content {
+    padding: 11em 1em;
+  }
+  .hero .content h4 {
+    font-weight: 900;
+    font-size: 8rem;
+    line-height: 1.3;
+  }
+  .hero .content .projects-toggle-container {
+    margin-top: 22px;
+  }
+  .hero .content .projects-toggle-container p {
+    font-weight: 600;
+    font-size: 2.3rem;
+    position: relative;
+  }
+  .hero .content .projects-toggle-container #projects-switch {
+    position: relative;
+    width: 30px;
+    cursor: pointer;
+    margin-top: -12px;
+  }
+  .projects .projects-container {
+    padding: 1.2em 14em;
+  }
+  .projects .projects-container .projects-container-title {
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .projects .projects-container .projects-container-title p {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .projects .projects-container .projects-container-title .bar {
+    width: 80px;
+    height: 8px;
+    border-radius: 72px;
+    background: linear-gradient(90.46deg, #ff0606 23.46%, #be00cf 92.67%);
+    margin: 0 auto;
+  }
+  .projects .projects-container .projects {
+    margin-top: 152px;
+  }
+  .projects .projects-container .projects .project {
+    padding: 7em 5em;
+    border-radius: 18px;
+    background: linear-gradient(114.43deg, #be00cf 20.86%, #ff0606 98.7%);
+    margin-bottom: 222px;
+    border: 1px solid;
+  }
+  .projects .projects-container .projects .project img {
+    width: 100%;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 18px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    margin-top: -152px;
+  }
+  .projects .projects-container .projects .project .project-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    margin-top: 7px;
+    color: white;
+  }
+  .projects .projects-container .projects .project .project-info .left p {
+    font-weight: 600;
+    font-size: 2.3rem;
+  }
+  .projects .projects-container .projects .project .project-info .left .techs {
+    margin-top: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+  }
+  .projects .projects-container .projects .project .project-info .left .techs p {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-right: 12px;
+    color: #dcdcdc;
+  }
+  .projects .projects-container .projects .project .project-info .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    display: flex;
+    align-items: center;
+  }
+  .projects .projects-container .projects .project .project-info .right p {
+    font-weight: 600;
+    font-size: 1.6rem;
+    cursor: pointer;
+  }
+  .projects .projects-container .projects .project .project-info .right img {
+    width: 20px;
+    height: 20px;
+  }
+  .skills .skills-container {
+    padding: 1.2em 14em;
+  }
+  .skills .skills-container .skills-container-title {
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .skills .skills-container .skills-container-title p {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .skills .skills-container .skills-container-title .bar {
+    width: 40px;
+    height: 6px;
+    border-radius: 72px;
+    background: linear-gradient(90.46deg, #ff0606 23.46%, #be00cf 92.67%);
+    margin: 0 auto;
+  }
+  .skills .skills-container .skills-icons-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 52px;
+    -ms-grid-column: 4;
+    grid-column: 4px;
+    margin-top: 72px;
+    place-items: center;
+  }
+  .skills .skills-container .skills-icons-container .skills-icons {
+    width: 70%;
+  }
+  .skills .skills-container .skills-icons-container .skills-icons img {
+    width: 100%;
+  }
+  .skills .skills-container .skills-icons-container .skills-icons p {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .contact .contact-container {
+    padding: 7em 14em;
+    position: relative;
+    margin-bottom: 72px;
+  }
+  .contact .contact-container .contact-title-container {
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .contact .contact-container .contact-title-container p {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .contact .contact-container .contact-title-container .bar {
+    width: 80px;
+    height: 6px;
+    border-radius: 72px;
+    background: linear-gradient(90.46deg, #ff0606 23.46%, #be00cf 92.67%);
+    margin: 0 auto;
+  }
+  .contact .contact-container label {
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+  .contact .contact-container input {
+    display: block;
+    width: 100%;
+    height: 60px;
+    margin-top: 7px;
+    margin-bottom: 22px;
+    font-size: 1.6rem;
+    padding: .3em;
+  }
+  .contact .contact-container input:focus {
+    outline: none;
+  }
+  .contact .contact-container textarea {
+    display: block;
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-top: 7px;
+    margin-bottom: 22px;
+    font-size: 1.6rem;
+    padding: .3em;
+    height: 150px;
+    resize: none;
+    font-family: "Poppins", sans-serif;
+  }
+  .contact .contact-container textarea:focus {
+    outline: none;
+  }
+  .contact .contact-container .send-btn {
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    background: linear-gradient(98.08deg, #BE00CF 14.41%, #FF0606 97.92%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+  }
+  .contact .contact-container .send-btn p {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: white;
+  }
+  .contact .contact-container .send-btn .sendIcon {
+    height: 20px;
+  }
+  .input-container {
+    position: relative;
+  }
+}
+/*# sourceMappingURL=index.css.map */
